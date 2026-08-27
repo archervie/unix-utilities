@@ -18,9 +18,9 @@ This is a text file!
 
 ## avgrep
 
-The command `avgrep` is a rewriting of the `grep` command. The command looks through FILE, line by line, trying to find the specified search term in the line. If a line has the word within it, the line is printed out to standard output, otherwise it is not. The command will read standard input if no FILE is specified.
+The command `avgrep` is a rewriting of the `grep` command. The command looks through FILE(s), line by line, trying to find the specified search term in the line. If a line has the word within it, the line is printed out to standard output, otherwise it is not. The command will read standard input if no FILE is specified.
 
-- **Usage:** `avgrep [OPTION] PATTERN [FILE]`
+- **Usage:** `avgrep [OPTION] PATTERN [FILE]...`
 - **Options:** `-h, --help: Displays help and exits.`
 - **Example:**
 ```
