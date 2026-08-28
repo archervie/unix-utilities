@@ -11,6 +11,7 @@ The command `avcat` is a rewriting of the `cat` command, printing out the conten
 - **Usage:** `avcat [OPTION] [FILE]...`
 - **Options:** `-h, --help: Displays help and exits.`
 - **Example:**
+
 ```
 $ avcat file.txt
 This is a text file!
@@ -23,6 +24,7 @@ The command `avgrep` is a rewriting of the `grep` command. The command looks thr
 - **Usage:** `avgrep [OPTION] PATTERN [FILE]...`
 - **Options:** `-h, --help: Displays help and exits.`
 - **Example:**
+
 ```
 $ avgrep foo bar.txt
 This line has 'foo' in it.
@@ -33,13 +35,17 @@ I really like food.
 ## avsed
 
 The command `avsed` is a rewriting of the stream editor `sed`. While the main command has various features, this command focuses on two of those features, string substitution and character translation. Substitution mode replaces a term with another term within FILE. Translation mode replaces the characters of the first input with the corresponding characters of the second input in FILE.
+
 - **Usage:** `avsed [OPTION]... [INITIAL] [FINAL] [FILE]`
-- **Options:** 
+- **Options:**
+
 ```
 -h, --help: Displays help and exits.
 -m, --mode: Determines the mode of the command. Can be either 'substitution' or 'translation'.
 ```
+
 - **Example:**
+
 ```
 $ avsed -m substitution foo bar myfile.txt
 Barbar! I like bard, and those who don't are barlish.
@@ -48,7 +54,8 @@ Barbar! I like bard, and those who don't are barlish.
 ---
 
 ## Usage
-To use these commands, simply clone the repository and compile the commands under `gcc`. 
+
+To use these commands, simply clone the repository and compile the commands under `gcc`.
 
 ```
 $ git clone https://github.com/archervie/unix-utilities.git ~/projects/
