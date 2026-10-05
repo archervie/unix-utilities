@@ -53,3 +53,8 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Binary files
+avcat
+avgrep
+avsed

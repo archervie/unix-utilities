@@ -112,7 +112,7 @@ int main(int argc, char *argv[]) {
 
                 int found = 0;
 
-                for (int j = 0; j < strlen(initial); j++) {
+                for (size_t j = 0; j < strlen(initial); j++) {
                     if (line[i] == initial[j]) {
                         printf("%c", final[j]);
                         found = 1;
