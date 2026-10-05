@@ -60,9 +60,7 @@ To use these commands, simply clone the repository and compile the commands unde
 ```
 $ git clone https://github.com/archervie/unix-utilities.git ~/projects/
 $ cd ~/projects/unix-utilities
-$ gcc -Wall -Wextra -Werror -O2 -o avcat avcat.c
-$ gcc -Wall -Wextra -Werror -O2 -o avgrep avgrep.c
-$ gcc -Wall -Wextra -Werror -O2 -o avsed avsed.c
+$ make
 ```
 
 You can add them to `PATH` by copying the binaries over to `~/.local/bin`: `$ cp avcat avgrep avsed ~/.local/bin/`
@@ -71,3 +69,5 @@ And exporting the directory by adding it to `PATH`:
 
 - For `bash` or `zsh`: `$ export PATH="$HOME/.local/bin:$PATH"`
 - For `fish`: `fish_add_path ~/.local/bin`
+
+You can delete `.o` files through `make clean`. You can delete the binaries through `make fclean`.
